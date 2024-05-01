@@ -48,6 +48,10 @@ The project evaluates a **multi-installment scheduling strategy** for SAR image 
 - Set up the SLURM scheduler for resource allocation and load distribution.
 - Ensure scheduler communication for load tracking and result retrieval.
 
+### Images
+![SLURM Architection](img/expslt1.png?raw=true "SLURM Architection")
+
+
 ### Figures
 **SLURM Configuration and Workflow:**
 ~~~mermaid
@@ -63,15 +67,6 @@ graph TB;
 - Implement SAR algorithm using DLT for load divisibility.
 - Apply backpropagation to convert radar data into images.
 - Create pulse matrices for SAR data processing.
-
-### Figures
-**SAR Algorithm Process:**
-~~~mermaid
-graph LR;
-    A["DLT Framework"] --> B["Backpropagation"]
-    B --> C["Pulse Matrices Creation"]
-    C --> D["Image Reconstruction"]
-~~~
 
 ---
 ## SAR Image Result Retrieval
