@@ -28,3 +28,55 @@ The project evaluates a **multi-installment scheduling strategy** for SAR image 
 - **MIS-RR vs. EQS**: MIS-RR showed better time performance
 - **Theoretical vs. Experimental**: DLT-based analysis matched with results
 - **Significance**: Reduction in processing time and improved infrastructure use
+
+# Deployment 
+---
+
+# SAR Image Reconstruction Experiment Setup
+---
+
+## Setting Up Digital Ocean Nodes
+- Create a DigitalOcean account and access the dashboard.
+- Use the "Create" button to initiate VM creation.
+- Select VM specifications: OS, CPU, memory, storage.
+- Deploy the required number of VMs in the chosen data center.
+
+---
+## Setting Up SLURM on Processing Nodes
+- Follow SLURM's official guide to install on VMs.
+- Configure SLURM controller and worker nodes for communication.
+- Set up the SLURM scheduler for resource allocation and load distribution.
+- Ensure scheduler communication for load tracking and result retrieval.
+
+### Figures
+**SLURM Configuration and Workflow:**
+~~~mermaid
+graph TB;
+    A["Install SLURM"] --> B["Configure Nodes"]
+    B --> C["Set Up Scheduler"]
+    C --> D["Scheduler Communication"]
+    D --> E["Result Retrieval"]
+~~~
+
+---
+## SAR Image Reconstruction Algorithm
+- Implement SAR algorithm using DLT for load divisibility.
+- Apply backpropagation to convert radar data into images.
+- Create pulse matrices for SAR data processing.
+
+### Figures
+**SAR Algorithm Process:**
+~~~mermaid
+graph LR;
+    A["DLT Framework"] --> B["Backpropagation"]
+    B --> C["Pulse Matrices Creation"]
+    C --> D["Image Reconstruction"]
+~~~
+
+---
+## SAR Image Result Retrieval
+- Experiment with MIS-RR and EQS strategies.
+- Assess time performance based on nodes, pixel size, and pulse number.
+- Analyze results and scheduling impact on time, cost, and resource utilization.
+
+
