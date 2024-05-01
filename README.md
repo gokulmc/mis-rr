@@ -49,7 +49,7 @@ The project evaluates a **multi-installment scheduling strategy** for SAR image 
 - Ensure scheduler communication for load tracking and result retrieval.
 
 ### Images
-<div class="background: white;"> ![SLURM Architection](img/expslt1.png?raw=true "SLURM Architection") </div>
+<div class="background: white;"> <img  src='img/expslt1.png' alt='SLURM Architection'> </div>
 
 
 ### Figures
