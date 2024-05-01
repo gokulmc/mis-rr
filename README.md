@@ -1,7 +1,7 @@
 # Experimental Evaluation of Multi-Installment Scheduling Strategy for SAR Image Reconstruction
 
 ---
-### Abstract 
+## Abstract 
 Radar loads, especially Synthetic Aperture Radar(SAR) image reconstruction loads use a large volume of data collected from satellites to create a high-resolution image of the earth. To design near-real-time applications that utilise SAR data, speeding up the image reconstruction algorithm is imperative. This can be achieved by deploying a set of distributed computing infrastructures connected through a network. Scheduling such complex and large divisible loads on a distributed platform can be designed using the Divisible Load Theory(DLT) framework. We performed distributed SAR image reconstruction experiments using the SLURM library on a cloud virtual machine network using two scheduling strategies, namely the Multi-Installment Scheduling with Result Retrieval(MIS-RR) strategy and the traditional EQual-partitioning Strategy(EQS). The DLT model proposed in the MIS-RR strategy is incorporated to make the load divisible. Based on the experimental results and performance analysis carried out using different pixel lengths, pulse set sizes, and the number of virtual machines, we observe that the time performance of MIS-RR is much superior to that of EQS. Hence the MIS-RR strategy is of practical significance in reducing the overall processing time, and cost, and in improving the utilisation of the compute infrastructure. Furthermore, we note that the DLT-based theoretical analysis of MIS-RR coincides well with the experimental data, demonstrating the relevance of DLT in the real world.
 
 ### Keywords
